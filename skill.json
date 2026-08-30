@@ -1,0 +1,38 @@
+{
+  "name": "genpark-repository-scoped-agentic-rule-indexer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Repository scoped agentic rule indexer injecting context-aware architectural guidelines into LLM generation passes.",
+  "author": "genpark",
+  "category": "code-rules",
+  "tags": [
+    "cursor-rules",
+    "rule-injection",
+    "context-filter",
+    "architectural-guidelines",
+    "prompt-context"
+  ],
+  "inputs": {
+    "repo_structure_path": {
+      "type": "string"
+    },
+    "current_active_file": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "rule_index_id": {
+      "type": "string"
+    },
+    "matched_rule_definitions": {
+      "type": "array"
+    },
+    "architecture_compliance_enforced": {
+      "type": "boolean"
+    },
+    "rule_hierarchy_manifest_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
